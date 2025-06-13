@@ -14,7 +14,7 @@ public class LC300 {
      * 找到 <递归 + 记忆化搜索> 并转换成递推
      * dp[i]: 以第n个元素结尾的最长子序列的长度
      * 依次比较nums[i]和nums[0...i-1]的大小
-     * 如果nums[i] > nums[i], 则选择dp[i]和dp[j] + 1中的最大值
+     * 如果nums[i] > nums[i], 则选择dp[i]和dp[j] + 1中的最大值 -> 递推公式: max{dp[i], dp[j] + 1}
      * 同时维护一个ans变量, 记录dp数组中的最大值, 遍历结束后就是最长递增子序列的长度
      */
     class Solution {
